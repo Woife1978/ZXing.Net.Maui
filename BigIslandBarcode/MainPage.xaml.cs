@@ -24,7 +24,7 @@ namespace BigIslandBarcode
 		{
 			foreach (var barcode in e.Results)
 				Console.WriteLine($"Barcodes: {barcode.Format} -> {barcode.Value}");
-
+			
 			var first = e.Results?.FirstOrDefault();
 			if (first is not null)
 			{
